@@ -1,6 +1,6 @@
-name: publish website to cpanel
- on:
-   push:
+name: publish website to Cpanel
+  on:
+  push:
       branches: 
         - main
  jobs:
@@ -17,6 +17,6 @@ name: publish website to cpanel
            ftp-server: ${{ secrets.FTP_SERVER }}
            ftp-username: ${{ secrets.FTP_USERNAME }}
            ftp-password: ${{ secrets.FTP_PASSWORD }}
-      
+           local-dir: toupload      
  
        
