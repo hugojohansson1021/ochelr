@@ -1,22 +1,17 @@
-name: publish website to Cpanel
-  on:
-  push:
-      branches: 
-        - main
- jobs:
- FTP-Deploy-Action:
- name: FTP-Deploy-Action
- runs-on: ubuntu-latest
- steps:
-   - uses: actions/checkout@v2.1.0
-   with:
-      fetch-depth: 2
-      - name: FTP-Deploy-Action
-        uses: SamKirkland/FTP-Deploy-Action@3.1.1
-         with:
-           ftp-server: ${{ secrets.FTP_SERVER }}
-           ftp-username: ${{ secrets.FTP_USERNAME }}
-           ftp-password: ${{ secrets.FTP_PASSWORD }}
-           local-dir: toupload      
- 
-       
+name: Deploy via ftp
+on: push
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Upload ftp
+      uses: sebastianpopp/ftp-action@releases/v2
+      with:
+        host: ${{ secrets.FTP_SERVER }}
+        user: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        localDir: "dist"
+        remoteDir: "www"
+        options: "--delete --asci"
