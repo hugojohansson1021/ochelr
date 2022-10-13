@@ -7,7 +7,7 @@
 }
 
 .navbar{
-    background: #131313;
+    background: #1f1f1f;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -30,8 +30,8 @@
 }
 
 #navbar_logo{
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-color: #4A00E0;
+    background-image: linear-gradient(to top, #8E2DE2 0%, #4A00E0 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -85,8 +85,8 @@
     outline: none;
     border-radius: 4px;
     background: #833ab4;
-    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4 );
-    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4 );
+    background: -webkit-linear-gradient(to right, #59C173, #a17fe0, #5D26C1 );
+    background: linear-gradient(to right, #59C173, #a17fe0, #5D26C1 );
     color: #fff;
     transition: all 0.3s ease;
 }
@@ -194,8 +194,8 @@
 /* Hero section*/
 
 .hero{
-    background: #000000;
-    background: linear-gradient(to right, #161616, #000000);
+    background: #5c5c5c;
+    background: linear-gradient(to right, #6f6f6f, #000000);
     padding: 200px 0;
 }
 
@@ -283,8 +283,8 @@ background-size: 100%;
 
 .main_content h1{
     font-size: 2rem;
-    background-color: #fe3b6f;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-color: #59C173;
+    background-image: linear-gradient(to top, #59C173 0%, #5D26C1 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -296,7 +296,7 @@ background-size: 100%;
 
 .main_content h2{
     font-size: 4rem;
-    background: #da22ff;  /* fallback for old browsers */
+    background: #59C173;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: 100%;
@@ -316,8 +316,8 @@ background-size: 100%;
 .main_btn{
     font-size: 1.8rem;
     background: #833ab4;
-    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4 );
-    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4 );
+    background: -webkit-linear-gradient(to right, #59C173, #a17fe0, #5D26C1 );
+    background: linear-gradient(to right, #59C173, #a17fe0, #5D26C1 );
     padding: 20px 60px;
     border: none;
     border-radius: 4px;
@@ -342,7 +342,7 @@ background-size: 100%;
     left: 0;
     width: 0;
     height: 100%;
-    background: #ff1ead;
+    background:#59C173;
     transition: all 0.35s;
     border-radius: 4px;
 }
@@ -367,7 +367,7 @@ background-size: 100%;
     flex-direction: column;
     justify-content: center;
     color: #fff;
-    background-image: linear-gradient(to right, #00dbde, #fc00ff 100%);
+    background-image: linear-gradient(to right, #59C173, #5D26C1  100%);
 }
 
 /* Mobile Responsive */
@@ -441,7 +441,7 @@ background-size: 100%;
   }
 
   .priser{
-    background: #131313;
+    background: #282828;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -451,8 +451,8 @@ background-size: 100%;
   }
 
   .priser h1{
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-color: #59C173;
+    background-image: linear-gradient(to top, #59C173 0%, #5D26C1 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -461,6 +461,7 @@ background-size: 100%;
     margin-bottom: 5rem;
     font-size: 2.5rem;
     justify-content: center;
+    text-align: center;
   }
 
   .priser_wrapper{
@@ -479,14 +480,31 @@ background-size: 100%;
     flex-direction: column;
     justify-content: center;
     color: #fff;
-    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+    background-image: linear-gradient(to right, #59C173 0%, #5D26C1 100%);
     transition: 0.3s ease-in;
+    text-align: center;
   }
 
   .priser_card:nth-child(2){
-    background: #7F7FD5;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    background: #59C173;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #5D26C1, #a17fe0, #59C173);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #5D26C1, #a17fe0, #59C173); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+  .priser_card:nth-child(1){
+    
+    background: #59C173;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #5D26C1, #a17fe0, #59C173);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #5D26C1, #a17fe0, #59C173); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
+
+  .priser_card:nth-child(3){
+    
+    background: #59C173;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #5D26C1, #a17fe0, #59C173);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #5D26C1, #a17fe0, #59C173); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   }
 
@@ -542,7 +560,7 @@ background-size: 100%;
 
   /* Footer CSS */
 .footer__container {
-    background-color: #131313;
+    background-color: #191919;
     padding: 5rem 0;
     display: flex;
     flex-direction: column;
